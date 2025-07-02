@@ -26,11 +26,6 @@ public struct PlaceholderTextEditor: View {
         let editor = TextEditor(text: $text)
             .scrollContentBackground(.hidden)
             .foregroundColor(inputTextColor)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(borderColor, lineWidth: borderLineWidth)
-                    .fill(backgroundColor)
-            )
         
         ZStack(alignment: .topLeading) {
             editor
@@ -41,6 +36,12 @@ public struct PlaceholderTextEditor: View {
                 .padding(.init(top: 9, leading: 8, bottom: 0, trailing: 0))
                 .allowsHitTesting(false)
         }
+        .background(backgroundColor)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(borderColor, lineWidth: borderLineWidth)
+        )
     }
 }
 
