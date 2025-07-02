@@ -1,0 +1,15 @@
+{
+  "originHash" : "1875d8c205a7a8eca124917a08098beff683d4d4623f3ebd3d723933e2c038a4",
+  "pins" : [
+    {
+      "identity" : "placeholdertexteditor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/haruto318/PlaceholderTextEditor",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2676f9634336c0bdc03189b23de936b245024e61"
+      }
+    }
+  ],
+  "version" : 3
+}
